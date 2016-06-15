@@ -1,7 +1,7 @@
 {
   "name": "mxd-logging",
   "description": "Returns configured winston logger instances",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://github.com/maxdome/logging",
   "readmeFilename": "README.md",
   "main": "src/lib.js",

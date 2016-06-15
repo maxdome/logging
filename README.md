@@ -12,11 +12,13 @@ For available types and their options, see: https://github.com/winstonjs/winston
  
 ```
 {
-  "logging": [
-    { 
-      type: '',
-      options: {} 
-    }
-  ]
+  "logging": {
+    "transports": [
+      { 
+        type: '',
+        options: {} 
+      }
+    ]
+  }
 }
 ```
