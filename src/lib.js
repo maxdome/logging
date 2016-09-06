@@ -20,8 +20,10 @@ module.exports = (config) => (category, options) => {
   const logger = new winston.Logger(options);
   if (config.logging && config.logging.transports) {
     for (const transport of config.logging.transports) {
-      transport.options.label = category;
-      logger.add(winston.transports[transport.type], transport.options);
+      logger.add(
+        winston.transports[transport.type],
+        Object.assign({}, transport.options, { label: category })
+      );
     }
   }
   return logger;
