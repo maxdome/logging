@@ -23,8 +23,8 @@ For available types and their options, see: https://github.com/winstonjs/winston
   "logging": {
     "transports": [
       { 
-        type: '',
-        options: {} 
+        "type": "",
+        "options": {}
       }
     ]
   }
